@@ -1,5 +1,5 @@
 //mongodb ye syntax itni compalsary likhni he
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');//mongoose express and mongodb ko connect karne ke liye
 mongoose.connect(`mongodb://localhost/mydatabase`);
 const db = mongoose.connection;
 db.on("connected", (err) => {
